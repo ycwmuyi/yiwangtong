@@ -20,3 +20,7 @@
     public boolean HandleUrlCall(android.webkit.WebView,java.lang.String);
     public void callKeyBoardActivity();
 }
+
+-keep com.yiwangtong_demo.ycw.yiwangtong.CMBBaseJsonRequestData { *; }
+-keep com.yiwangtong_demo.ycw.yiwangtong.CMBPayReqData { *; }
+

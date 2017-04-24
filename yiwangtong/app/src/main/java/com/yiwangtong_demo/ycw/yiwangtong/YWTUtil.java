@@ -32,7 +32,8 @@ public class YWTUtil {
             try {
                 System.out.println("name:"+fields[i].getName()+" value:"+fields[i].get(obj));
                 valueNameList.add(fields[i].getName());
-                valueMap.put(fields[i].getName(),  fields[i].get(obj)==null?"":(String)fields[i].get(obj));
+                String value = fields[i].get(obj) == null ? "" : fields[i].get(obj)+"";
+                valueMap.put(fields[i].getName(),value);
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
